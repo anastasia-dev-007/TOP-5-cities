@@ -191,10 +191,26 @@
           </p>
           <p>Kind regards,<br /> Anastasia</p>
           <hr />
-          <form id="comment-form">           
-            <label for="comment">Comment:</label><br>
-            <textarea id="comment" name="comment" rows="5" required></textarea><br><br>
-        
+
+            <p><b>Rate this website</b></p>
+
+            <input type="button" onclick="alert('Cool!')" value="I like it!">
+            <input type="button" onclick="alert('Awfull!')" value="I dislike it!">
+          <br /> <br /><hr />
+
+          
+
+          <form action="submit_feedback.php" method="post">
+            <label for="feedback"><b>Which city is your favourite?</b></label><br>
+            <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br>
+            <input type="submit" value="Submit">
+          </form>
+
+          <br /> <br /><hr />
+
+          <form action="submit_feedback.php" method="post">
+            <label for="feedback"><b>Leave your feedback:</b></label><br>
+            <textarea id="feedback" name="feedback" rows="7" cols="70"></textarea><br>
             <input type="submit" value="Submit">
           </form>
 
@@ -203,7 +219,10 @@
         </main>
 
         <footer>
-
+            <pre>
+Author: 
+Anastasia Tataru<br>
+<a href="anastasia.dev007@gmail.com">anastasia.dev007@gmail.com</a></pre>
         </footer>
     </body>
 </html>
